@@ -6,8 +6,8 @@ module OpenAI
       @client = client.beta(assistants: OpenAI::Assistants::BETA_VERSION)
     end
 
-    def create(vector_store_id:, parameters: {})
-      @client.json_post(path: "/vector_stores/#{vector_store_id}/files", parameters:)
+    def create(vector_store_id:, file_id:)
+      @client.json_post(path: "/vector_stores/#{vector_store_id}/files", parameters: { file_id: file_id })
     end
 
     def list(vector_store_id:)

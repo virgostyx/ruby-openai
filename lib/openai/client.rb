@@ -90,10 +90,6 @@ module OpenAI
       @vector_stores ||= OpenAI::VectorStores.new(client: self)
     end
 
-    def vector_store_files
-      @vector_store_files ||= OpenAI::VectorStoreFiles.new(client: self)
-    end
-
     def azure?
       @api_type&.to_sym == :azure
     end

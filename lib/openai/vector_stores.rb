@@ -25,5 +25,9 @@ module OpenAI
     def delete(id:)
       @client.delete(path: "/vector_stores/#{id}")
     end
+
+    def files
+      @files ||= OpenAI::VectorStoreFiles.new(client: @client)
+    end
   end
 end
