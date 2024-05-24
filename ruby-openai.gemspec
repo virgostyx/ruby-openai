@@ -1,21 +1,21 @@
-require_relative "lib/openai/version"
+  require_relative "lib/openai/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ruby-openai"
   spec.version       = OpenAI::VERSION
-  spec.authors       = ["Alex"]
-  spec.email         = ["alexrudall@users.noreply.github.com"]
+  spec.authors       = ["Virgo"]
+  spec.email         = ["virgostyx@gmail.com"]
 
   spec.summary       = "OpenAI API + Ruby! 🤖❤️"
-  spec.homepage      = "https://github.com/alexrudall/ruby-openai"
+  spec.homepage      = "https://github.com/virgostyx/ruby-openai"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/alexrudall/ruby-openai"
-  spec.metadata["changelog_uri"] = "https://github.com/alexrudall/ruby-openai/blob/main/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/virgostyx/ruby-openai"
+  spec.metadata["changelog_uri"] = "https://github.com/virgostyx/ruby-openai/blob/main/CHANGELOG.md"
   spec.metadata["rubygems_mfa_required"] = "true"
-  spec.metadata["funding_uri"] = "https://github.com/sponsors/alexrudall"
+  spec.metadata["funding_uri"] = "https://github.com/sponsors/virgostyx"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
