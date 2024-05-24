@@ -86,6 +86,14 @@ module OpenAI
       json_post(path: "/moderations", parameters: parameters)
     end
 
+    def vector_stores
+      @vector_stores ||= OpenAI::VectorStores.new(client: self)
+    end
+
+    def vector_store_files
+      @vector_store_files ||= OpenAI::VectorStoreFiles.new(client: self)
+    end
+
     def azure?
       @api_type&.to_sym == :azure
     end
